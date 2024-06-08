@@ -3,4 +3,11 @@
     <string name="store_bottom_nav_text">Store</string>
     <string name="at_a_glance_bottom_nav_text">At A Glance</string>
     <string name="financial_status_bottom_nav_text">Financial Status</string>
+    <string name="more_menu_text">More</string>
+    <string name="notification_menu_text">Notification</string>
+    <string name="profile_menu_text">Profile</string>
+    <string name="upload_product">Upload Product</string>
+    <string name="all_products">All Products</string>
+    <string name="sales_summary">Sales Summary</string>
+    <string name="greetings_user">Greetings, User!</string>
 </resources>
