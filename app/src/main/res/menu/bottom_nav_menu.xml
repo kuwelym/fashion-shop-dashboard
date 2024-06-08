@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/storeBotNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_store"
+        android:title="@string/store_bottom_nav_text"
+        />
+
+    <item
+        android:id="@+id/atAGlanceBotNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_at_a_glance"
+        android:title="@string/at_a_glance_bottom_nav_text"/>
+
+    <item
+        android:id="@+id/financialStatusBotNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_financial_status"
+        android:title="@string/financial_status_bottom_nav_text"/>
+
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/atAGlanceBotNav">
+    <fragment
+        android:id="@+id/storeBotNav"
+        android:name="com.example.fashiondashboard.StoreFragment"
+        android:label="StoreFragment"
+        tools:layout="@layout/fragment_store">
+        <action
+            android:id="@+id/action_storeFragment_to_atAGlanceFragment"
+            app:destination="@id/atAGlanceBotNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_storeFragment_to_financialStatusFragment"
+            app:destination="@id/financialStatusBotNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/atAGlanceBotNav"
+        android:name="com.example.fashiondashboard.AtAGlanceFragment"
+        android:label="AtAGlanceFragment"
+        tools:layout="@layout/fragment_at_a_glance">
+        <action
+            android:id="@+id/action_atAGlanceFragment_to_financialStatusFragment"
+            app:destination="@id/financialStatusBotNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+        />
+        <action
+            android:id="@+id/action_atAGlanceFragment_to_storeFragment"
+            app:destination="@id/storeBotNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/financialStatusBotNav"
+        android:name="com.example.fashiondashboard.FinancialStatusFragment"
+        android:label="FinancialStatusFragment"
+        tools:layout="@layout/fragment_financial_status">
+        <action
+            android:id="@+id/action_financialStatusFragment_to_storeFragment"
+            app:destination="@id/storeBotNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_financialStatusFragment_to_atAGlanceFragment"
+            app:destination="@id/atAGlanceBotNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+
+</navigation>
