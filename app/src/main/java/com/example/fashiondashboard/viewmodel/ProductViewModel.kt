@@ -1,8 +1,6 @@
 package com.example.fashiondashboard.viewmodel
 
 import android.content.Context
-import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -43,11 +41,10 @@ class ProductViewModel(private val context: Context, private val productReposito
         viewModelScope.launch {
             try {
                 val categoryList = productRepository.getCategories()
+                _categories.value = categoryList
 
             } catch (e: Exception) {
                 // Handle the error
-                Log.e("ProductViewModel", "Error fetching categories", e)
-                Toast.makeText(context, e.message, Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -128,12 +125,10 @@ class ProductViewModel(private val context: Context, private val productReposito
     val navigateToAllProducts: LiveData<Boolean> get() = _navigateToAllProducts
 
     fun onTotalProductsCardClick() {
-        Log.d("ProductViewModel", "onTotalProductsCardClick")
         _navigateToAllProducts.value = true
     }
 
     fun onNavigatedToAllProducts() {
-        Log.d("ProductViewModel", "onNavigatedToAllProducts")
         _navigateToAllProducts.value = false
     }
 }

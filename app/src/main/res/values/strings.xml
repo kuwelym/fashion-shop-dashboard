@@ -10,4 +10,7 @@
     <string name="all_products">All Products</string>
     <string name="sales_summary">Sales Summary</string>
     <string name="greetings_user">Greetings, User!</string>
+    <string name="text_productid">Product ID</string>
+    <string name="text_symbol_colon">:</string>
+    <string name="category_image_content_description">Category Image</string>
 </resources>
