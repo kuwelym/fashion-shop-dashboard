@@ -6,7 +6,7 @@
     app:startDestination="@id/atAGlanceBotNav">
     <fragment
         android:id="@+id/storeBotNav"
-        android:name="com.example.fashiondashboard.StoreFragment"
+        android:name="com.example.fashiondashboard.ui.fragment.StoreFragment"
         android:label="StoreFragment"
         tools:layout="@layout/fragment_store">
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/atAGlanceBotNav"
-        android:name="com.example.fashiondashboard.AtAGlanceFragment"
+        android:name="com.example.fashiondashboard.ui.fragment.AtAGlanceFragment"
         android:label="AtAGlanceFragment"
         tools:layout="@layout/fragment_at_a_glance">
         <action
@@ -49,7 +49,7 @@
 
     <fragment
         android:id="@+id/financialStatusBotNav"
-        android:name="com.example.fashiondashboard.FinancialStatusFragment"
+        android:name="com.example.fashiondashboard.ui.fragment.FinancialStatusFragment"
         android:label="FinancialStatusFragment"
         tools:layout="@layout/fragment_financial_status">
         <action
@@ -67,5 +67,11 @@
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@android:anim/slide_out_right"/>
     </fragment>
+
+    <activity
+        android:id="@+id/allProductsActivity"
+        android:name="com.example.fashiondashboard.ui.activity.AllProductsActivity"
+        android:label="activity_all_products"
+        tools:layout="@layout/activity_all_products"/>
 
 </navigation>
